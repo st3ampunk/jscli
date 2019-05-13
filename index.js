@@ -28,7 +28,7 @@ const Index = () => {
 
     inquirer.prompt([{ 
         type : "list",
-        choices : ['aboutme','contactme',"donotenter"],
+        choices : ['aboutme','contactme',"dontclickhere"],
         name : "value",
         message : "choose your option"
     }
