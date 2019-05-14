@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 const aboutme = require("./commands/Aboutme");
 const contactme = require("./commands/Contactme");
+const portfolio = require("./commands/portfolio");
 const inquirer = require("inquirer");
 const chalk = require('chalk');
 const CFonts = require('cfonts');
@@ -28,7 +29,7 @@ const Index = () => {
 
     inquirer.prompt([{ 
         type : "list",
-        choices : ['aboutme','contactme',"dontclickhere"],
+        choices : ['aboutme','contactme',"portfolio","dontclickhere"],
         name : "value",
         message : "choose your option"
     }
@@ -36,9 +37,11 @@ const Index = () => {
     .then((answer) => {
         if (answer.value == "aboutme"){
             aboutme();
-        } else {
+        } elif(answer.value == "contactme") 
             contactme();    
-        }
+         elif(answer.value == "portfolio") 
+            portfolio();    
+         
     })
 };
 
