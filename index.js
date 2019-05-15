@@ -6,7 +6,7 @@ const inquirer = require("inquirer");
 const chalk = require('chalk');
 const CFonts = require('cfonts');
 // cFonts hello -f simple -c "#23ffed";
-CFonts.say('Hey there|Abishek here!!', {
+CFonts.say('Hey there|Abishek!!', {
     font: 'block',              // define the font face
     align: 'left',              // define text alignment
     colors: ['#23ffed'],         // define all colors
